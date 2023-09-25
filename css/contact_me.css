@@ -1,0 +1,76 @@
+
+.contact_me
+{
+  max-width: 1024px;
+  margin: 0px auto;
+  margin-top: 6em;
+  padding: 1em;
+  font: 1.2em Helvetica, arial, sans-serif;
+  padding-bottom:5em;
+  margin-bottom: 0px;
+
+}
+
+label
+{
+  color: #3BB7CA;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;  
+  padding: 12px; 
+  border: 1px solid #ccc;  
+  border-radius: 4px;  
+  box-sizing: border-box;  
+  margin-top: 6px;  
+  margin-bottom: 16px; 
+  resize: vertical;
+
+}
+
+ 
+input[type=submit] {
+  background-color: #3BB7CA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+ 
+input[type=submit]:hover {
+  background-color: black;
+}
+
+
+.footer
+{
+  bottom: 0px;
+
+}
+
+
+.project_title
+{
+  text-align:center;
+  text-transform:uppercase;
+  font-size:50px; 
+  font-family:"Playfair Display", serif; 
+  font-weight:400;
+   text-align: center; 
+   border-bottom: 3px solid #3BB7CA;
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+   color: #3BB7CA;
+   margin-bottom: 1em;
+  
+}
+
+.project_title span
+{
+  padding:0 10px;
+  background:#fff;  
+}

@@ -1,0 +1,166 @@
+.demo::-webkit-scrollbar {
+	display: none; 
+}
+
+.demo {
+	scrollbar-width: none; 
+	-ms-overflow-style: none; 
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+.header
+{
+	background: white;
+}
+.video_project
+{
+	margin: auto;
+	padding: 0px;
+	margin-top: 5em;
+}
+
+.project_title
+{
+  text-align:center;
+  text-transform:uppercase;
+  font-size:50px; 
+  font-family:"Playfair Display", serif; 
+  font-weight:400;
+  margin-bottom: 1em;
+   text-align: center; 
+   border-bottom: 3px solid #1ABFC1; 
+   margin: 10px 0 20px; 
+   margin-top: 1em;
+   margin-bottom: 2em;
+   line-height: 0.1em;
+   color: #1ABFC1;
+  
+}
+
+.project_title span
+{
+  padding:0 10px;
+  background:#fff;  
+}
+
+iframe
+{
+	height: 300px;
+}
+
+@media (min-width: 700px)
+{
+	iframe
+	{
+		height: 800px;
+	}
+
+}
+
+
+.video_project_idea
+{
+	max-width: 1024px;
+	padding: 0px;
+	margin:auto;
+
+
+
+}
+
+.idea
+{
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	background: #1ABFC1;
+	color: white;
+	padding: 1em;
+	border-radius: 20px;
+
+}
+
+
+
+#section7
+{
+	text-align: center;
+	background-color:#1ABFC1;
+	overflow: hidden;
+	align-items: center;
+	animation: blink3 3s infinite;
+	animation-delay: -3s;
+}
+
+@keyframes blink3 {
+	0% {color:rgba(255,255,255,1.00);}
+	20% {color:rgba(255,255,255,0.20);}
+	50% {color:rgba(255,255,255,0.50);}
+	100%{color:#1ABFC1;}
+}
+
+#section5
+{
+
+	overflow: hidden;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
+
+#section5 span
+{
+	font-family: 'Alfa Slab One', cursive;
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	animation: waviy 1s infinite;
+	animation-delay: calc(.1s * var(--i));
+	overflow: hidden;
+}
+
+@keyframes waviy {
+	0%,40%,100% {
+		transform: translateY(0)
+	}
+	20% {
+		transform: translateY(-20px)
+	}
+}
+
+h2
+{
+   color: #1ABFC1;
+
+}
+
+.videotext
+{
+   max-width: 1024px;
+   margin: 0 auto;
+   margin-top: 2em;
+   grid-area: videotext;
+   display: grid;
+   grid-template-areas:
+   "videotext1" 
+   "videotext2" 
+   "videotext3"  
+   "videotext4";
+   font-size: 1.3em;
+
+
+}
+
+
+@media (min-width: 700px) 
+{
+   .videotext
+   {
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "videotext1 videotext2""videotext3 videotext4";
+   }
+
+}

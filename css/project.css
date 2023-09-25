@@ -1,0 +1,183 @@
+.projects
+{
+  grid-area: projects;
+}
+
+.project_title
+{
+  grid-area: project_title;
+}
+
+.project1
+{
+  grid-area: project1;
+}
+
+.project2
+{
+  grid-area: project2;
+}
+
+.project3
+{
+  grid-area: project3;
+}
+
+.project4
+{
+  grid-area: project4;
+}
+
+.project5
+{
+  grid-area: project5;
+}
+
+.project6
+{
+  grid-area: project6;
+}
+
+
+.header
+{
+  background: white;
+}
+
+
+
+a{text-decoration: none;}
+
+a:hover{text-decoration: underline;}
+
+
+.projects
+{
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+  max-width: 1024px;
+}
+
+
+
+.project_title
+{
+  text-align:center;
+  text-transform:uppercase;
+  font-size:50px; 
+  font-family:"Playfair Display", serif; 
+  font-weight:400;
+   text-align: center; 
+   border-bottom: 3px solid #3BB7CA;
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+   color: #3BB7CA;
+   margin-bottom: 1em;
+  
+}
+
+.project_title span
+{
+  padding:0 10px;
+  background:#fff;  
+}
+
+
+.project1_img
+{
+  background: url('../img/projects_01.png') no-repeat;
+  background-position: center;
+  background-size:contain;
+  line-height: 5em;
+
+}
+
+.project2_img
+{
+  background: url('../img/projects_02.png') no-repeat;
+  background-position: center;
+  background-size:contain;
+  line-height: 5em;
+
+}
+
+.project3_img
+{
+  background: url('../img/projects_06.png') no-repeat;
+  background-position: center;
+  background-size:contain;
+  line-height: 5em;
+
+}
+
+.project4_img
+{
+  background: url('../img/projects_03.png') no-repeat;
+  background-position: center;
+  background-size:contain;
+  line-height: 5em;
+
+}
+
+
+
+.project_text
+{
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+.projects
+{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+  "project_title" 
+  "project1" 
+  "project2" 
+  "project3"
+  "project4"
+  "project5""project6";
+
+}
+
+
+
+
+@media (min-width: 700px) 
+{
+ 
+
+  .projects
+{
+  grid-template-columns:repeat(4, 1fr);
+  grid-gap: 2em;
+  grid-template-areas: 
+  "project_title project_title project_title project_title"
+  "project1 project2 project3 project4"
+  "project5 project5 project6 project6";
+
+}
+
+
+}
+
+
+.project_text span
+{
+  font-size:0.9em;
+}
+
+
+
+
+.project5_img
+{
+  background: url('../img/projects_04.png') no-repeat;
+  background-position: center;
+  background-size:contain;
+  line-height: 5em;
+
+}
+

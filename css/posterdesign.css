@@ -1,0 +1,170 @@
+a #menu_left 
+{
+	font-size:0.7em;
+} 
+
+.poster_design
+{
+	max-width: 1024px;
+	margin: auto;
+	margin-bottom: 2em;
+	
+}
+
+
+
+.poster_design_img
+{
+	background: url('../img/Xiaoyi HUW.jpg') no-repeat;
+	background-position: center;
+	background-size: contain;
+	line-height:35em;
+	margin-top:5em;
+
+}
+
+
+
+@media (min-width: 700px)
+{
+	a #menu_left  
+{
+	font-size:1em;
+} 
+
+	.poster_design_img
+	{
+		line-height:70em;
+		
+	}
+}
+
+
+.poster_idea
+{
+	grid-area: poster_idea;
+}
+
+.poster_design_left
+{
+	grid-area: poster_design_left;
+}
+
+.poster_design_right
+{
+	grid-area: poster_design_right;
+}
+
+
+
+
+.poster_idea
+{
+	display: grid;
+	column-gap: 2em;
+	grid-template-areas: "poster_design_left""poster_design_right";
+	margin-top: 2em;
+}
+
+
+@media (min-width: 700px)
+{
+	.poster_idea
+	{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "poster_design_left poster_design_right";
+	}
+
+}
+
+
+.poster_design_left
+{
+
+	border-left:10px solid #94E4EA;
+	padding: 0px;
+	height:5em;
+	padding-left: 1em;
+	
+}
+
+.poster_design_left h1
+{
+	font-family: 'Londrina Solid', cursive;
+	color:#87423C;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1.2em;
+
+}
+
+
+.poster_design_left span
+{
+	font-size: 1.2em;
+	 
+}
+
+
+.poster_design_right
+{
+	
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Orienta', sans-serif; 
+	line-height: 1.4em;
+	padding-left: 1.2em;
+	padding-right: 2em;
+
+
+
+}
+
+
+.poster_design_left2
+{
+
+	border-left:10px solid #94E4EA;
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Orienta', sans-serif; 
+	line-height: 1.4em;
+	padding-left: 1.2em;
+	padding-right: 2em;
+	height: 18em;
+	margin-bottom:2em;
+
+	 
+}
+
+
+.poster_design_right2
+{
+	
+	text-align: center;
+}
+
+
+
+
+.poster_design_right3
+{
+
+	border-left:10px solid #94E4EA;
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Orienta', sans-serif; 
+	line-height: 1.4em;
+	padding-left: 1.2em;
+	padding-right: 2em;
+	height: 5em;
+	 
+}
+
+
+.poster_design_left3
+{
+	
+	text-align: center;
+}

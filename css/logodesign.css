@@ -1,0 +1,199 @@
+
+
+.logo_design
+{
+	max-width: 1024px;
+	margin: auto;
+	
+}
+
+
+.logo_design_1
+{
+	background: url('../img/logoxiaoyi.png') no-repeat;
+	background-position: center;
+	background-size: contain;
+	line-height:15em;
+	
+	
+}
+
+
+
+
+.logo_design_2
+{
+	background: url('../img/logoidea.jpg') no-repeat;
+	background-position: center;
+	background-size: contain;
+	line-height:15em;
+	
+	
+}
+
+
+
+@media (min-width: 700px)
+{
+	.logo_design_1
+	{
+		
+		line-height:40em;
+	}
+
+	.logo_design_2
+	{
+		 
+		line-height:40em;
+	}
+
+
+}
+
+
+
+!----logo design End----!
+
+
+
+.logo_idea 
+{
+	grid-area: logo_idea;
+}
+
+
+.logo_idea_right
+{
+	grid-area: logo_idea_right;
+}
+
+.logo_idea_left
+{
+	grid-area: logo_idea_left;
+}
+
+.logo_idea
+{
+
+	padding: 0px;
+	margin-top: 2em;
+	grid-gap:2em;
+	display: grid;
+	grid-template-areas: "logo_idea_left" "logo_idea_right";
+
+}
+
+
+.logo_idea_left
+{
+
+	border-left:10px solid #D5B4EF;
+	padding: 0px;
+	height:5em;
+	padding-left: 1em;
+	
+}
+
+.logo_idea_left h1
+{
+	font-family: 'Londrina Solid', cursive;
+	color: #F272A2;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1.2em;
+
+}
+
+
+.logo_idea_left span
+{
+	font-size: 1.2em;
+	 
+}
+
+.logo_idea_right
+{
+	
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Orienta', sans-serif; 
+	line-height: 1.4em;
+	padding-left: 1em;
+
+
+
+}
+
+
+.logo_idea_left2
+{
+	
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Orienta', sans-serif; 
+	line-height: 1.4em;
+	padding-left: 1em;
+	border-left:10px solid #D5B4EF;
+	height:5em;
+
+}
+
+.logo_idea_right2
+{
+	text-align: center;
+}
+
+
+
+.logo_idea_left3
+{n
+	text-align: center;
+	margin-bottom:8em;
+}
+
+
+.logo_idea_right3
+{
+
+	border-left:10px solid #D5B4EF;
+	padding: 1em;
+	padding-right: 0px;
+	text-align: justify;
+	height:5em;
+
+}
+
+.logo_idea_right3 h1
+{
+	font-family: 'Londrina Solid', cursive;
+	color: #F272A2;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	
+
+}
+
+
+.logo_idea_right3 span
+{
+	font-size: 1.3em;
+	 
+}
+
+
+
+@media (min-width: 700px)
+{
+	.logo_idea
+	{
+		grid-template-columns: 1fr 1fr;
+
+		grid-template-areas: "logo_idea_left logo_idea_right";
+	}
+}
+
+
+
+

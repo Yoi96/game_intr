@@ -1,0 +1,129 @@
+.banner
+{
+  animation: banner 5s infinite;
+  max-width: 1024px;
+  line-height:30em;
+  padding-top:1em;
+  margin: auto;
+  background: url('../bannerimg/16.png') no-repeat; 
+  background-position: center; 
+  background-size: contain;
+}
+
+
+
+
+@media (min-width: 700px)
+{
+  .banner
+  {
+    padding-top: 400px;
+
+  }
+
+  @keyframes banner
+  {
+  0% { background: url('../bannerimg/00.png')  no-repeat;  background-position: center; background-size: contain;}
+  10%{ background: url('../bannerimg/01.png')  no-repeat; background-position: center; background-size: contain;}
+  15%{ background: url('../bannerimg/02.png')  no-repeat; background-position: center; background-size: contain;}
+  20%{ background: url('../bannerimg/03.png')  no-repeat; background-position: center; background-size: contain;}
+  25%{ background: url('../bannerimg/04.png')  no-repeat; background-position: center; background-size: contain;}
+  30%{ background: url('../bannerimg/05.png')  no-repeat; background-position: center; background-size: contain;}
+  35%{ background: url('../bannerimg/06.png')  no-repeat; background-position: center; background-size: contain;}
+  40%{ background: url('../bannerimg/07.png')  no-repeat; background-position: center; background-size: contain;}
+  45%{ background: url('../bannerimg/08.png')  no-repeat; background-position: center; background-size: contain;}
+  50%{ background: url('../bannerimg/09.png')   no-repeat; background-position: center; background-size: contain;}
+  55%{ background: url('../bannerimg/10.png')  no-repeat; background-position: center; background-size: contain;}
+  60%{ background: url('../bannerimg/11.png')  no-repeat; background-position: center; background-size: contain;}
+  65%{ background: url('../bannerimg/12.png')  no-repeat; background-position: center; background-size: contain;}
+  70%{ background: url('../bannerimg/13.png')  no-repeat; background-position: center; background-size: contain;}
+  75%{ background: url('../bannerimg/14.png')  no-repeat; background-position: center; background-size: contain;}
+  80%{ background: url('../bannerimg/15.png')  no-repeat; background-position: center; background-size: contain;}
+  100%{background: url('../bannerimg/16.png') no-repeat; background-position: center; background-size: contain;}
+  }
+}
+
+
+
+.banner
+{
+ 
+  max-width: 100%;
+  background: gray;
+  text-align: left;
+  padding:4em;
+  font-size:3em;
+  background: url('../img/logo.gif') no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+
+.banner span
+{
+  padding: 0px;
+}
+
+
+---------------
+
+ <banner id="banner">
+ <div class="banner">
+  <div class="banner_text">Welcome! <br> I am XIAOYI LIU </div>
+  <div class="banner_img">&nbsp;</div>
+.banner_text
+{
+  grid-area: banner_text;
+}
+
+.banner_img
+{
+  grid-area: banner_img;
+}
+
+
+.banner
+{
+  max-width: 100%;
+  display: grid;
+  grid-area: banner;
+  grid-template-areas: 
+  "banner_text"
+  "banner_img";
+}
+
+
+@media (min-width: 700px)
+{
+  .banner
+  {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "banner_text banner_img";
+
+
+   }
+}
+
+
+
+.banner_img
+{
+  background: url('../img/logo.gif') no-repeat;
+  background-position: center;
+  background-size:cover;
+  line-height:30em;
+
+}
+
+
+.banner_text
+{
+  color: #82e0e3;
+  text-align: center;
+  font-size:2.8em;
+  padding: 3em;
+  background: #fcfbff;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+
+}
